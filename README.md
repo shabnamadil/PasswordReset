@@ -10,7 +10,6 @@ Welcome to PasswordReset app! This app, powered by Python Django, is designed to
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 
 ## 🚀 Features
