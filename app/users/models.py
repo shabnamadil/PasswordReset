@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-from .manager import UserManager
+
+
 
 class CustomUser(AbstractUser):
     full_name = models.CharField('İstifadəçinin adı, soyadı', max_length=100)
@@ -12,8 +13,6 @@ class CustomUser(AbstractUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['password', 'phone_number']
     username = None
-
-    objects = UserManager()
 
     groups = models.ManyToManyField(
         'auth.Group',
